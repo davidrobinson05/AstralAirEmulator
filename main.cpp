@@ -103,6 +103,7 @@ SDL_AppResult SDL_AppInit(void **appstate, int argc, char *argv[])
                       3 * bg_image.value().GetMetaData().width);
   }
 
+  // what's crazy is that this doesn't actually resume audio stream device
   SDL_ResumeAudioStreamDevice(bgm_stream);
   SDL_ResumeAudioStreamDevice(se_stream);
 
